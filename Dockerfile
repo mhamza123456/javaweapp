@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-focal
-ADD target/webapp-0.0.1-SNAPSHOT.jar webapp-0.0.1-SNAPSHOT.jar
-EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "webapp-0.0.1-SNAPSHOT.jar"] 
+FROM lolhens/baseimage-openjre
+ADD target/springbootApp.jar springbootApp.jar
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "springbootApp.jar"]
